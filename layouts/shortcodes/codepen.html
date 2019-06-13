@@ -1,0 +1,44 @@
+{{/*
+
+    Embed a pen from codepen.io
+
+    The only required parameter is `id`.
+    It's the slug-hash of the pen. Get it from the url.
+    For other parameters and their default see below.
+    Overwrite them to your needs.
+
+    Examples:
+        - Simple:
+            {{< codepen id="Gflmy" >}}
+
+        - Show pen in js tab:
+            {{< codepen id="Gflmy" tab="js" >}}
+
+    Original shortcode by Jorinvo:
+        https://github.com/jorinvo/hugo-shortcodes/blob/master/shortcodes/pen.html
+
+    Modified by JulianNF to include a "click-to-load" default state
+
+*/}}
+
+
+{{/* DEFAULT SETTINGS: */}}
+
+{{ $user := "JulianNF" }}
+{{ $height := 500 }}
+{{ $tab := "result" }}      {{/* html|css|js|result */}}
+{{ $theme := "default" }}        {{/* create on codepen.io */}}
+{{ $click_to_load := "true" }}
+
+
+<script
+    data-slug-hash = "{{ .Get "id" }}"
+    data-user = "{{ or (.Get "user") $user }}"
+    data-height = "{{ or (.Get "height") $height }}"
+    data-default-tab = "{{ or (.Get "tab") $tab }}"
+    data-theme-id = "{{ or (.Get "theme") $theme }}"
+    data-preview = "{{ or (.Get "click_to_load") $click_to_load }}"
+    class = "codepen"
+    async
+    src = "//codepen.io/assets/embed/ei.js"
+></script>

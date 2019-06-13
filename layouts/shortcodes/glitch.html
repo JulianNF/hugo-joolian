@@ -1,0 +1,34 @@
+{{/*
+
+    Embed your code/app from glitch.com
+
+    The only required parameter is "project", which is the name of
+    the project on glitch.com. Two optional parameters are:
+        - preview_size
+            Accepts a value of 0 to 100. At 0 only the code is show, at 100 only the app is shown.
+        - attribution_hidden
+            Accepts a boolean, to hide/show who owns the glitch project.
+
+    Examples:
+        - Simple:
+            {{< glitch project="pinto-potato" >}}
+        - With options:
+            {{< glitch project="pinto-potato" preview_size="0" attribution_hidden="true" >}}
+
+    Written by JulianNF
+
+*/}}
+
+
+{{/* DEFAULT SETTINGS: */}}
+{{ $preview_size := 100 }}
+{{ $attribution_hidden := "false" }}
+
+<div class="glitch-embed-wrap">
+    <iframe
+        allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+        src="https://glitch.com/embed/#!/embed/{{ .Get "project" }}?path=package.json&previewSize={{ or (.Get "preview_size") $preview_size}}&attributionHidden={{ or (.Get "attribution_hidden") $attribution_hidden }}"
+        alt="{{ .Get "project" }} on Glitch"
+        style="height: 100%; width: 100%; border: 0;"
+    ></iframe>
+  </div>

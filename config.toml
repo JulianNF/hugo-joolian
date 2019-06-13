@@ -1,0 +1,90 @@
+baseURL = "http://joolian.com/"
+languageCode = "en-us"
+title = "Hi, I'm JulianNF"
+theme = "creative-portfolio"
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+[params]
+  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "default"
+
+  # Format dates with Go's time formatting:
+	date_format = "2006-01-02"
+  # Show (or hide) read time estimates for articles:
+  show_read_time = true
+
+
+
+  description = "The online home of JulianNF"
+  copyright = "&copy;2019 JulianNF"
+  sidebarAbout = [
+    "I love to make and repair things. I've recently completed my Full Stack Web Developer certification and I love it."
+  ]
+  # Contact page
+     # Since this template is static, the contact form uses www.formspree.io as a
+     # proxy. The form makes a POST request to their servers to send the actual
+     # email. Visitors can send up to a 1000 emails each month for free.
+     #
+     # What you need to do for the setup?
+     #
+     # - set your email address under 'email' below
+     # - upload the generated site to your server
+     # - send a dummy email yourself to confirm your account
+     # - click the confirm link in the email from www.formspree.io
+     # - you're done. Happy mailing!
+  email = "you@yoursite.com"
+
+    # Optional Matomo analytics (formerly piwik)
+      # [params.analytics.matomo]
+      #  URL = "https://stats.example.com"
+      #  ID = "42"
+      #  # Track all subdomains with "*.example.com" (Optional)
+      #  domain = "www.example.com"
+      #  # Optional integrity check hash
+      #  hash = ""
+
+  # Decide where the sidebar-heading link points to:
+  hello_destination = "/about"
+
+  # Added functionality for optional website logo at the top of the sidebar:
+  [params.siteLogo]
+  image = "/images/joolian-logo.png"
+  alttext = "Go to home page"
+  url = "/"
+
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Portfolio"
+  url = "portfolio/"
+  home = true
+
+  [[params.navlinks]]
+  name = "Blog"
+  url = "posts/"
+
+  [[params.navlinks]]
+  name = "About"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "Get in touch"
+  url = "contact/"
+
+  [params.social]
+  email         = "joolian.com@gmail.com"
+  twitter       = "full profile url in twitter"
+  linkedin      = "full profile url in linkedin"
+  stackoverflow = "full profile url in stackoverflow"
+  github        = "full profile url in github"
+  #youtube       = "full profile url in youtube"
+  #whatsapp      = "wa.me service link"
+
+  #twitter = "nfjulian"
+  #linkedin = "juliannf"
+  #github = "JulianNF"
+  #codepen = "JulianNF"
