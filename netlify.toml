@@ -1,0 +1,23 @@
+[build]
+publish = "public"
+command = "hugo"
+
+# For production (note that trailing decimal matters (i.e. version 0.55.0 will work, but 0.55 or .55 or .55.0 will not work)):
+[context.production.environment]
+HUGO_VERSION = "0.55.6"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+# For testing:
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.55.6"
+
+# For doing git branch -based deployments/previews:
+#[context.branch-deploy.environment]
+#HUGO_VERSION = "0.55.6"
+
+#[context.next.environment]
+#HUGO_ENABLEGITINFO = "true"
