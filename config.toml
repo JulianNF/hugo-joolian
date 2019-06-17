@@ -77,10 +77,10 @@ googleAnalytics = ""
 
   [params.social]
   email         = "joolian.com@gmail.com"
-  twitter       = "full profile url in twitter"
-  linkedin      = "full profile url in linkedin"
-  stackoverflow = "full profile url in stackoverflow"
-  github        = "full profile url in github"
+  twitter       = "https://twitter.com/nfjulian"
+  linkedin      = "https://www.linkedin.com/in/juliannf"
+  stackoverflow = "https://stackoverflow.com/users/11592610/juliannf"
+  github        = "https://github.com/JulianNF"
   #youtube       = "full profile url in youtube"
   #whatsapp      = "wa.me service link"
 
