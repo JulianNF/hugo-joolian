@@ -9,12 +9,12 @@ After seven years in the community sector in strategy, communications, and capac
 
 **Since completing the freeCodeCamp Full Stack Web Development Certification this May, I'm on the hunt for work.**
 
- If you’d like to get in touch (mentors, internships, jobs, fun projects, volunteering opportunities) or simply want to follow me, don’t hesitate to do so.
+If you’d like to get in touch (mentors, internships, jobs, fun projects, volunteering opportunities) or simply want to follow me, don’t hesitate to do so.
 
-I bring a background in Marketing, Strategy and Finance to the table, as well as experience teaching and living and working on four continents. I'm fluent in English, French, and Spanish and dabble in Portuguese, Italian, and Japanese. If the need should ever arise, I can weld (TIG, MIG), wrench, do woodwork, and I understand basic electronics.
+I bring a background in Marketing, Strategy and Finance to the table, and have worked primarily in fundraising, communications, strategy, capacity-building, and teaching. I've lived and worked on four continents and am fully fluent in English, French, and Spanish and can can survive in Portuguese, Italian, and Japanese. If the need should ever arise for a project, I can weld (TIG, MIG), wrench, do woodwork, and I understand basic electronics.
 
 #### Education
 
 * freeCodeCamp - Full Stack Web Developer Certification
 * McGill University - Triple concentration in Marketing, Finance, and Strategy
-* Université Jean-Moulin Lyon III - Semester focused on European Business Realities
+* Université Jean-Moulin Lyon III - Semester focused on the European Business Realities Masters courses
