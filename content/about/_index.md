@@ -11,7 +11,7 @@ After seven years in the community sector in strategy, communications, and capac
 
 If you’d like to get in touch (mentors, internships, jobs, fun projects, volunteering opportunities) or simply want to follow me, don’t hesitate to do so.
 
-I bring a background in Marketing, Strategy and Finance to the table, and have worked primarily in fundraising, communications, strategy, capacity-building, and teaching. I've lived and worked on four continents and am fully fluent in English, French, and Spanish and can can survive in Portuguese, Italian, and Japanese. If the need should ever arise for a project, I can weld (TIG, MIG), wrench, do woodwork, and I understand basic electronics.
+I bring a background in Marketing, Strategy and Finance to the table, and have worked primarily in fundraising, communications, strategy, capacity-building, and teaching. I've lived and worked on four continents and am fully fluent in English, French, and Spanish and can survive in Portuguese, Italian, and Japanese. If the need should ever arise for a project, I can weld (TIG, MIG), wrench, do woodwork, and I understand basic electronics.
 
 #### Education
 
