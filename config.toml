@@ -1,4 +1,4 @@
-baseURL = "http://joolian.com/"
+baseURL = "https://joolian.com/"
 languageCode = "en-us"
 title = "Hi, I'm JulianNF"
 theme = "creative-portfolio"
