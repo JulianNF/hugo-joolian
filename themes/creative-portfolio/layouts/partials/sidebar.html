@@ -8,13 +8,7 @@
     </a>
     {{end}}
 
-
-    <!-- Add the ability to change the destination of the sidebar-header (i.e. Hi, I'm so and so) directly from the config.toml file. -->
-    {{ if .Site.Params.hello_destination }}
-      <h1 class="sidebar-heading"><a href="{{ .Site.Params.hello_destination }}">{{ .Site.Title }}</a></h1>
-    {{ else }}
-      <h1 class="sidebar-heading"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-    {{ end }}
+    <h1 class="sidebar-heading"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
     
     {{ range .Site.Params.sidebarAbout }}
       <p class="sidebar-p">{{ . | safeHTML }}</p>

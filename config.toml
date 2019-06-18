@@ -1,12 +1,15 @@
 baseURL = "https://joolian.com/"
 languageCode = "en-us"
-title = "Hi, I'm JulianNF"
+title = "joolian.com"
 theme = "creative-portfolio"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
+
+# Determine if you want HUGO to pluralize page titles (e.g. Portfolios vs Portfolio) (true by default):
+pluralizeListTitles = false
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
@@ -16,9 +19,7 @@ googleAnalytics = ""
   # Format dates with Go's time formatting:
 	date_format = "2006-01-02"
   # Show (or hide) read time estimates for articles:
-  show_read_time = true
-
-
+  show_read_time = true  
 
   description = "The online home of JulianNF"
   copyright = "&copy;2019 JulianNF"
@@ -47,9 +48,6 @@ googleAnalytics = ""
       #  domain = "www.example.com"
       #  # Optional integrity check hash
       #  hash = ""
-
-  # Decide where the sidebar-heading link points to:
-  hello_destination = "/about"
 
   # Added functionality for optional website logo at the top of the sidebar:
   [params.siteLogo]

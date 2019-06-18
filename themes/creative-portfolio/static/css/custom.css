@@ -3,12 +3,13 @@
 .logo {
     box-sizing: content-box;
     margin: 0;
-    padding: 0 0 2em 0;
-    width: 5em;
+    padding: 0 0 0.5em 0;
+    width: 6em;
     height: auto;
 }
 .sidebar-heading {
     text-transform: none;
+    font-size: 0.95em;
 }
 .readmore {
     float: right;
