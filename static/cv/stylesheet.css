@@ -1,0 +1,244 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 9pt;
+    color: #222;
+
+    background-image: url("cv-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(50, 120, 240);
+}
+
+button {
+    position: fixed;
+    left: -1em;
+    padding: 0.5em 0.8em 0.5em 2em;
+    border-radius: 0.3em;
+
+    background-color: rgba(200, 250, 250, 1);
+    border-color: rgba(200, 250, 250, 1);
+
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background-color: rgba(150, 230, 230, 1);
+    border-color: rgba(150, 230, 230, 1);
+    padding-left: 3em;
+}
+button .fa {
+    padding-right: 0.5em;
+}
+.return__button {
+    top: 2em;
+}
+.print__button {
+    top: 5em;
+}
+
+.page {
+    box-sizing: border-box;
+    margin: 2em 0.5em 3em 0.5em;
+    width: 210mm;
+    height: 297mm;
+    /*
+    max-width: 210mm;
+    max-height: 297mm;
+    */
+    padding: 10mm 15mm;
+    background-color: white;
+    box-shadow: 1em 1em 2em 1.2em rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Define what and how gets printed when user calls Ctrl+P or clicks the print button: */
+@media print {
+    body {
+        visibility: hidden;
+    }
+    .page,
+    .stamp {
+        visibility: visible;
+        margin: 0;
+    }
+    @page {
+        margin: 0;
+    }
+    #certificate::after {
+        content: "(https://bit.ly/2WXtyok)"
+    }
+    #certificate__link{
+        display: none;
+    }
+    
+}
+
+header {
+    text-align: center;
+    padding: 1em 0 0 0;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: lighter;
+    font-variant: small-caps;
+    border: 3px solid rgba(175, 221, 203, 1);
+    padding: 1em 1.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 0.9em;
+    font-weight: lighter;
+    margin-top: 0.3em;
+}
+
+h3 {
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+}
+h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: rgba(175, 221, 203, 1);
+
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+h4 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2em;
+}
+
+.progressbar {
+    background: rgba(175, 221, 203, 0.5);
+    white-space: nowrap;
+    overflow-x: visible;
+    font-size: 0.75em;
+    margin-bottom: 0.3em;
+}
+
+.progressbar__fill {
+    background: rgba(175, 221, 203, 1);
+    padding: 0.1em 0 0.1em 0.5em;;
+    box-sizing: border-box;
+}
+
+pre {
+    white-space: pre-line;
+}
+
+.contact__item {
+    padding-bottom: 0.5em;
+}
+
+.contact__icon {
+    padding-right: 1em;
+}
+
+.education__item > p {
+    margin-top: 0;
+}
+
+.metadata {
+    margin-bottom: 0.5em;
+}
+
+.metadata * {
+    margin: 0;
+}
+
+.metadata__top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.timeframe {
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+
+.companycontact * {
+    margin: 0;
+}
+
+
+
+
+.stamp {
+    width: 85mm;
+    height: 55mm;
+    background: white;
+    margin: 2em 0.5em 3em 0.5em;
+    padding: 3mm;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stamp header {
+    padding: 0;
+}
+.stamp p {
+    margin: 0.2em;
+}
+
+.stamp h1 {
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin: 0 1em;
+    border-color: black;
+}
+
+#opener {
+    margin-top: 2.5em;
+}
+
+#signature {
+    width: 60mm;
+}
+#salutation {
+    margin-top: 0
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid rgba(175, 221, 203, 1)
+}
