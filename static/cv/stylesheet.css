@@ -80,12 +80,11 @@ button .fa {
         margin: 0;
     }
     #certificate::after {
-        content: "(https://bit.ly/2WXtyok)"
+        content: "(www.tinyurl.com/jnfFCC)"
     }
     #certificate__link{
         display: none;
     }
-    
 }
 
 header {
@@ -136,7 +135,7 @@ h4 {
 }
 
 .progressbar {
-    background: rgba(175, 221, 203, 0.5);
+    background-color: rgba(175, 221, 203, 0.5);
     white-space: nowrap;
     overflow-x: visible;
     font-size: 0.75em;
@@ -144,7 +143,7 @@ h4 {
 }
 
 .progressbar__fill {
-    background: rgba(175, 221, 203, 1);
+    background-color: rgba(175, 221, 203, 1);
     padding: 0.1em 0 0.1em 0.5em;;
     box-sizing: border-box;
 }
