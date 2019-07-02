@@ -75,6 +75,7 @@ button .fa {
     .stamp {
         visibility: visible;
         margin: 0;
+        box-shadow: none;
     }
     @page {
         margin: 0;
@@ -94,7 +95,7 @@ header {
 
 h1 {
     font-size: 1.8em;
-    font-weight: lighter;
+    font-weight: 300;
     font-variant: small-caps;
     border: 3px solid rgba(175, 221, 203, 1);
     padding: 1em 1.5em;
@@ -103,13 +104,13 @@ h1 {
 
 h2 {
     font-size: 0.9em;
-    font-weight: lighter;
+    font-weight: 300;
     margin-top: 0.3em;
 }
 
 h3 {
     font-variant: small-caps;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 1.5em;
     margin-top: 1.5em;
 }
@@ -124,7 +125,7 @@ h3::after {
 }
 
 h4 {
-    font-weight: bold;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -216,7 +217,7 @@ ul {
 }
 
 .stamp h1 {
-    font-weight: bolder;
+    font-weight: 700;
     font-size: 1.5em;
     margin: 0 1em;
     border-color: black;
