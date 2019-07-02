@@ -1,13 +1,13 @@
 <div class="post-metadata">
     
     <div class="metadata-item" id="post-date">
-        <i class="fa fa-calendar-o"></i>&nbsp;&nbsp;
+        <i class="fas fa-calendar-o"></i>&nbsp;&nbsp;
         <time datetime="{{ .Date }}">{{ .Date.Format .Site.Params.date_format }}</time>&nbsp;&nbsp;
     </div>
 
     <div class="metadata-item" id="readtime">
         {{ if .Site.Params.show_read_time }}
-            <i class="fa fa-clock-o"></i>&nbsp;&nbsp;
+            <i class="fas fa-clock-o"></i>&nbsp;&nbsp;
             {{ .ReadingTime }} min read&nbsp;&nbsp;
         {{ end }}
     </div>
@@ -16,7 +16,7 @@
         {{ if isset .Params "categories" }}
             {{ $categoriesLen := len .Params.categories }}
             {{ if gt $categoriesLen 0 }}
-                <i class="fa fa-folder-o"></i>&nbsp;&nbsp;
+                <i class="fas fa-folder-o"></i>&nbsp;&nbsp;
                 {{ range $k, $v := .Params.categories }}
                     <a class="metadata-link" href="{{ $.Site.BaseURL }}categories/{{ . | urlize | lower }}">{{ . }}</a>
                     {{ if lt $k (sub $categoriesLen 1) }}&middot;{{ end }}
@@ -29,7 +29,7 @@
         {{ if isset .Params "tags" }}
             {{ $tagsLen := len .Params.tags }}
             {{ if gt $tagsLen 0 }}
-                    <i class="fa fa-tags"></i>&nbsp;&nbsp;
+                    <i class="fas fa-tags"></i>&nbsp;&nbsp;
                     {{ range $k, $v := .Params.tags }}
                         <a class="metadata-link" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>
                         {{ if lt $k (sub $tagsLen 1) }}&middot;{{ end }}

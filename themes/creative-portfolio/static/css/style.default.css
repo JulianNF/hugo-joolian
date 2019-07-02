@@ -362,7 +362,8 @@ SIDEBAR + RIGHT COLUMN
   color: #555555;
 }
 .sidebar-menu li:before {
-  font-family: 'FontAwesome';
+  font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
+  font-weight: 900;
   content: '\f105';
   margin: 0 5px 0 -15px;
   color: #999999;
@@ -414,7 +415,8 @@ SIDEBAR + RIGHT COLUMN
   list-style-type: none;
 }
 .content-column-content ul li:before {
-  font-family: 'FontAwesome';
+  font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
+  font-weight: 900;
   content: '\f105';
   margin: 0 5px 0 -15px;
   color: #ef5285;
@@ -945,10 +947,11 @@ a:active {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  font-family: 'FontAwesome';
+  font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
+  font-weight: 900;
   content: '\f105';
   text-align: center;
-  font-size: 50px;
+  font-size: 2em;
   color: #555555;
 }
 .box-masonry .box-masonry-image:hover {
