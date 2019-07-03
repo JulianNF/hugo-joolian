@@ -11,7 +11,7 @@ googleAnalytics = ""
 # Determine if you want HUGO to pluralize page titles (e.g. Portfolios vs Portfolio) (true by default):
 pluralizeListTitles = false
 
-# Enable emoji:
+# Enable emojis for the site:
 enableEmoji = true
 
 [params]
