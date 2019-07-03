@@ -11,6 +11,9 @@ googleAnalytics = ""
 # Determine if you want HUGO to pluralize page titles (e.g. Portfolios vs Portfolio) (true by default):
 pluralizeListTitles = false
 
+# Enable emoji:
+enableEmoji = true
+
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
