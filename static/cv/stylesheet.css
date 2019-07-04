@@ -38,7 +38,8 @@ button:hover {
     border-color: rgba(150, 230, 230, 1);
     padding-left: 3em;
 }
-button .fa {
+button .fas,
+button .fab {
     padding-right: 0.5em;
 }
 .return__button {
@@ -189,14 +190,7 @@ ul {
 
 
 
-
-.companycontact * {
-    margin: 0;
-}
-
-
-
-
+/* Stamp stuff: */
 .stamp {
     width: 85mm;
     height: 55mm;
@@ -223,19 +217,26 @@ ul {
     border-color: black;
 }
 
+
+
+
+/* Cover letter stuff: */
 #opener {
     margin-top: 2.5em;
 }
 
 #signature {
     width: 60mm;
+    margin-left: 45%;
 }
 #salutation {
-    margin-top: 0
+    margin-top: 0;
+    margin-left: 50%;
 }
 
 footer {
     margin-top: auto;
+    margin-bottom: -1.2em;
     width: 100%;
     padding-top: 1em;
     display: flex;

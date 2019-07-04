@@ -16,7 +16,7 @@
         {{ if isset .Params "categories" }}
             {{ $categoriesLen := len .Params.categories }}
             {{ if gt $categoriesLen 0 }}
-                <i class="fas fa-folder-o"></i>&nbsp;&nbsp;
+                <i class="fas fa-folder-open"></i>&nbsp;&nbsp;
                 {{ range $k, $v := .Params.categories }}
                     <a class="metadata-link" href="{{ $.Site.BaseURL }}categories/{{ . | urlize | lower }}">{{ . }}</a>
                     {{ if lt $k (sub $categoriesLen 1) }}&middot;{{ end }}
