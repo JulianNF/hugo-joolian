@@ -27,7 +27,7 @@ enableEmoji = true
   description = "The online home of JulianNF"
   copyright = "&copy;2019 JulianNF"
   sidebarAbout = [
-    "I love to make and repair things. I've recently completed my Full Stack Web Developer certification and I love it."
+    "I'm a full-stack developer and fabricator who loves to solve problems in the digital and physical space."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
