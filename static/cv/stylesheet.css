@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 9pt;
@@ -28,16 +30,23 @@ button {
     padding: 0.5em 0.8em 0.5em 2em;
     border-radius: 0.3em;
 
-    background-color: rgba(200, 250, 250, 1);
-    border-color: rgba(200, 250, 250, 1);
+    background: rgba(112, 182, 191, 1);
+    border: 1px solid rgba(35, 165, 182, 1);
 
     transition: all 0.3s ease-in-out;
 }
+
 button:hover {
     background-color: rgba(150, 230, 230, 1);
-    border-color: rgba(150, 230, 230, 1);
+    border-color: rgba(112, 182, 191, 1);
     padding-left: 3em;
 }
+
+.fa-tags {
+    font-size: 0.8em;
+    color: #555;
+}
+
 button .fas,
 button .fab {
     padding-right: 0.5em;
@@ -54,10 +63,6 @@ button .fab {
     margin: 2em 0.5em 3em 0.5em;
     width: 210mm;
     height: 297mm;
-    /*
-    max-width: 210mm;
-    max-height: 297mm;
-    */
     padding: 10mm 15mm;
     background-color: white;
     box-shadow: 1em 1em 2em 1.2em rgba(0, 0, 0, 0.2);
@@ -71,6 +76,9 @@ button .fab {
 @media print {
     body {
         visibility: hidden;
+    }
+    .print__button, .return__button {
+        display: none;
     }
     .page,
     .stamp {
@@ -91,14 +99,15 @@ button .fab {
 
 header {
     text-align: center;
-    padding: 1em 0 0 0;
+    /* padding: 0.1em 0 0 0; */
+    padding: 0;
 }
 
 h1 {
     font-size: 1.8em;
     font-weight: 300;
     font-variant: small-caps;
-    border: 3px solid rgba(175, 221, 203, 1);
+    border: 3px solid rgba(35, 161, 178, 1);
     padding: 1em 1.5em;
     margin: 0;
 }
@@ -114,15 +123,16 @@ h3 {
     font-weight: 300;
     font-size: 1.5em;
     margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 h3::after {
     content: "";
     display: block;
     width: 100%;
     height: 3px;
-    background: rgba(175, 221, 203, 1);
+    background: rgba(35, 161, 178, 1);
 
-    clip-path: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0.25em 100%);
 }
 
 h4 {
@@ -137,7 +147,7 @@ h4 {
 }
 
 .progressbar {
-    background-color: rgba(175, 221, 203, 0.5);
+    background-color: rgba(175, 225, 232, 0.5);
     white-space: nowrap;
     overflow-x: visible;
     font-size: 0.75em;
@@ -145,7 +155,7 @@ h4 {
 }
 
 .progressbar__fill {
-    background-color: rgba(175, 221, 203, 1);
+    background-color: #83c8d3;
     padding: 0.1em 0 0.1em 0.5em;;
     box-sizing: border-box;
 }
@@ -166,8 +176,10 @@ pre {
     margin-top: 0;
 }
 
-.metadata {
-    margin-bottom: 0.5em;
+.jobs .metadata__top {
+    /* border-left: 1px solid #ccc;
+    padding-left: 0.5em; */
+    padding-top: 0.25em;
 }
 
 .metadata * {
